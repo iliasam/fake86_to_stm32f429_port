@@ -10,4 +10,4 @@ I make a custom dev board with R-2R DAC for creating VGA image, holder for micro
 ![Alt text](ModuleSchematic.png?raw=true "Image")
 
 
-Thi biggest problem of this project that CPU emulation speed is wery low - less than 1 MHz.
+Thi biggest problem of this project is that CPU emulation speed is wery low - less than 1 MHz.
