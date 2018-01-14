@@ -177,6 +177,10 @@ uint8_t translatescancode (uint16_t keyval)
           return (0xE);
           break; //backspace
           
+        case 0x2B:
+          return (0x0F);
+          break; //tab
+          
           //******************************
           
         case 0x52://up

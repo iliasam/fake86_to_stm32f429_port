@@ -1294,9 +1294,9 @@ static void LCD_AF_GPIOConfig(void)
   GPIO_PinAFConfig(GPIOB, GPIO_PinSource8, GPIO_AF_LTDC);
   GPIO_PinAFConfig(GPIOB, GPIO_PinSource9, GPIO_AF_LTDC);
   GPIO_PinAFConfig(GPIOB, GPIO_PinSource10, GPIO_AF_LTDC);
-  GPIO_PinAFConfig(GPIOB, GPIO_PinSource11, GPIO_AF_LTDC);
+  //GPIO_PinAFConfig(GPIOB, GPIO_PinSource11, GPIO_AF_LTDC); //green5
   
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;
+  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10;
   GPIO_Init(GPIOB, &GPIO_InitStruct);
   
   /* GPIOÑ configuration */
@@ -1330,10 +1330,11 @@ static void LCD_AF_GPIOConfig(void)
   GPIO_Init(GPIOH, &GPIO_InitStruct);
   
   /* GPIOI configuration */
+  GPIO_PinAFConfig(GPIOI, GPIO_PinSource0, GPIO_AF_LTDC); //green5
   GPIO_PinAFConfig(GPIOI, GPIO_PinSource2, GPIO_AF_LTDC);
   GPIO_PinAFConfig(GPIOI, GPIO_PinSource9, GPIO_AF_LTDC);
   GPIO_PinAFConfig(GPIOI, GPIO_PinSource10, GPIO_AF_LTDC);
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_9 | GPIO_Pin_10;
+  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_2 | GPIO_Pin_9 | GPIO_Pin_10;
   
   //GPIO_PinAFConfig(GPIOI, GPIO_PinSource4, GPIO_AF_LTDC); //BLUE4
   //GPIO_InitStruct.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_4| GPIO_Pin_9 | GPIO_Pin_10;  

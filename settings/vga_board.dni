@@ -9,7 +9,7 @@ TriggerName=main
 LimitSize=0
 ByteLimit=50
 [DebugChecksum]
-Checksum=-127537
+Checksum=695397172
 [CodeCoverage]
 Enabled=_ 0
 [Exceptions]
@@ -119,7 +119,7 @@ ShowTiming=1
 mode=0
 [Breakpoints2]
 Bp0=_ 1 "EMUL_CODE" "{$PROJ_DIR$\stm32f4xx_it.c}.73.3" 0 0 1 "" 0 "" 0
-Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\STM32_USB_HOST_Library\Class\HID\src\usbh_hid_keybd.c}.83.11" 0 0 1 "" 0 "" 0
+Bp1=_ 1 "EMUL_CODE" "{$PROJ_DIR$\fake86\disk.c}.174.7" 0 0 1 "" 0 "" 0
 Count=2
 [Aliases]
 Count=0

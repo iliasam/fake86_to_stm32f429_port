@@ -24,6 +24,7 @@
 #include "config.h"
 #include "disk.h"
 #include "cpu.h"
+#include "main.h"
 
 #include "sd_card_reader.h"
 #include "sdcard.h"
@@ -166,7 +167,12 @@ void writedisk (uint8_t drivenum, uint16_t dstseg, uint16_t dstoff, uint16_t cyl
       sectorbuffer[sectoffset] = read86(memdest++);
     }
     //fwrite (sectorbuffer, 1, 512, disk[drivenum].diskfile);
-    f_write (disk[drivenum].diskfile, sectorbuffer, 512, (UINT*)&bytes_written);
+    f_write(disk[drivenum].diskfile, sectorbuffer, 512, (UINT*)&bytes_written);
+    delay_ms(100);
+    if (bytes_written != 512)
+    {
+      asm("nop");
+    }
   }
   regs.byteregs[regal] = (uint8_t) sectcount;
   cf = 0;
