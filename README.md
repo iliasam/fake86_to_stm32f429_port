@@ -11,3 +11,6 @@ I make a custom dev board with R-2R DAC for creating VGA image, holder for micro
 ![Alt text](ModuleSchematic.png?raw=true "Image")
 
 
+Dev board schematic is here: https://github.com/iliasam/stm32f429_vga_examples/blob/master/schematic/schematic_v1.1.png
+
+
