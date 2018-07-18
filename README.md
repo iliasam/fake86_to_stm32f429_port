@@ -1,6 +1,8 @@
 # fake86_to_stm32f429_port
 8086 PC emulator for STM32F429 MCU
 
+Some more info: https://hackaday.io/project/153287-fake86-emulator-for-stm32  
+
 The biggest problem of this project is that CPU emulation speed is very low - less than 1 MHz.
 
 
